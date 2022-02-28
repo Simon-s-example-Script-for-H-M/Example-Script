@@ -18,6 +18,7 @@ In AXD, we want to provide data ingestion functionality using data factory, whic
 
 Azure Data factory pipelines consist of link services (authorization to storage accounts), datasets (targeting a specific file format and file path inside a storage account), triggers (time or event based triggers) and activities (ETL activities). These above mentioned building blocks are all stored as JSON files inside data factory studio, and data factory pipelines are high level JSON file that calls on these building blocks. A data factory pipeline thereby performs a series of ETL activities that connects a source and a sink dataset inside 2 storage account (authorized by link services), and runs based on a defined trigger.    
 
+
 When setting up a data factory environment, a common solution is to connect data factory to an external git repo, which contains the essential JSON scripts for the pipelines of interest. Data factory will then be able to construct these pipelines based on the provided JSON scripts. 
 
 ### Challenges:
