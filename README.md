@@ -1,7 +1,10 @@
 # H&M Code Example
 Simon Wu 
+
 Email: simon.wu@afry.com
+
 Phone: 0764785168
+
 Github repo with code: https://github.com/Simon-s-example-Script-for-H-M/Example-Script
 
 ## AFRYX-Data-Analytics-Platform-Snippet (Terraform and Python)
