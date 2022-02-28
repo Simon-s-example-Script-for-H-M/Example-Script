@@ -1,11 +1,11 @@
 # the repo structure
 
+```
+|___ adf                                               (Azure Data factory)
 
-|___ adf                                               
+|    |__ dataset                                       (folder for data factory dataset templates for source and sink)
 
-|    |__ dataset                                       
-
-|    |__ linkedService                                 
+|    |__ linkedService                                 (folder for data factory linked services templates for blob storage and datalake)
 
 |    |__ trigger                                       (folder for data factory trigger templates for event based triggers)
 
@@ -47,6 +47,7 @@
 
 |___ environment.yaml                                 (environmnet pakcages for the python scripts run by terraform)   
 
+```
 
 
 # run terraform
