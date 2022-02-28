@@ -1,11 +1,11 @@
 # the repo structure
 
 
-|___ adf                                               
+|___ adf                                               (Azure Data factory)
 
-|    |__ dataset                                       
+|    |__ dataset                                       (folder for data factory dataset templates for source and sink)
 
-|    |__ linkedService                                 
+|    |__ linkedService                                 (folder for data factory linked services templates for blob storage and datalake)
 
 |    |__ trigger                                       (folder for data factory trigger templates for event based triggers)
 
