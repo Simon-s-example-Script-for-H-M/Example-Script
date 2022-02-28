@@ -1,7 +1,10 @@
 # H&M Code Example
 Simon Wu 
+
 Email: simon.wu@afry.com
+
 Phone: 0764785168
+
 Github repo with code: https://github.com/Simon-s-example-Script-for-H-M/Example-Script
 
 ## AFRYX-Data-Analytics-Platform-Snippet (Terraform and Python)
@@ -27,13 +30,21 @@ A cloud native modularized solution is to have a repo with all essential buildin
 This script is an infrastructure as code script based on terraform and python. It contains terraform scripts for blob storage, data lake and data factory resources, as well as template JSON files for data factory link services, datasets and triggers. 
 
 What happens in the background when the script is being executed can be summarized as:
+
 •	The instructions for how to run the code can be found in the README.md inside the folder
+
 •	Due to lack of time, some dependencies between resources are not properly established, but this can be solved by running “terraform apply” several times when encountering errors.
+
 •	Terraform deploys a blob storage & container, a datalake & datalake-file-system, a data factory resource and a github repo.
+
 •	Based on the dynamical parameters from the deployed resources mentioned above, python codes are executed inside terraform, which inserts the parameters to the template JSON files for link services, datasets and triggers.
+
 •	Based on a user-defined pipeline configuration given in “terraform.tfvars”, a python code is executed to generate a high level pipeline JSON file which is customized based on the users wish.
+
 •	All data factory related JSON files are uploaded to the github repo
+
 •	The github repo is connected to data factory to set up the data factory environment
+
 •	Based on the user-defined source file URL, the corresponding source file is uploaded to blob storage, which in order triggers the data factory pipeline to run.
 
 
@@ -54,5 +65,7 @@ We used OpenGL for image stitching and Pygame for the platfrom
 
 ### Script description:
 •	The instructions for how to run the code can be found in the README.md inside the folder
+
 •	OpenGL will create a 3D model (3D cubic space) based on 6 image tiles with different heading angles per time, and load it inside a Pygame screen.
+
 •	The Pygame screen is programmed to react to mouse actions, and the user are able to change viewing angle, zoom in and out inside a cubic space, or move back and forth between cubic spaces on a defined route.
