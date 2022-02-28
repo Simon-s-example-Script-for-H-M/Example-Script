@@ -11,6 +11,8 @@ Github repo with code: https://github.com/Simon-s-example-Script-for-H-M/Example
 ### Motivation: 
 In this script, I want to show an Infrastructure as Code example which I have written. It is a subset from our AFRYX-Data-Analytics-Platform (AXD) infrastructure, but modified to make work independently. 
 
+![text](https://github.com/Simon-s-example-Script-for-H-M/Example-Script/blob/main/datafactory_illustration.png)
+
 I choose this code as a demonstration of way of thinking behind infrastructure as code, which involves both terraform and python.
 
 ### Background and Problem description:
