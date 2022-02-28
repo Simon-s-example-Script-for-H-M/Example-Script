@@ -1,6 +1,4 @@
-#-------------------------------------------------
-#----------------the repo structure--------------
-#-------------------------------------------------
+# the repo structure
 
 
 |--- adf                                              (Azure Data factory)
@@ -34,16 +32,16 @@
 |--- environment.yaml                                 (environmnet pakcages for the python scripts run by terraform)   
 
 
-#-------------------------------------------------
-#----------------   run terraform  --------------
-#-------------------------------------------------
-1.requirements:
+
+# run terraform
+
+1. requirements:
     - terraform                                       (see https://learn.hashicorp.com/tutorials/terraform/install-cli)
     - Azure CLI                                       (see https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
     - Github account                                  (with granted "Authorized OAuth apps" access to "AzureDatafacotry", see https://docs.microsoft.com/en-us/azure/data-factory/source-control)
     - install environment.yaml
     
-2.run terraform script from root: "terraform_projects/Simons_example_infra"
+2. run terraform script from root: "terraform_projects/Simons_example_infra"
     - modify the terraform.tfvars
           - enter environment tag paramter (for example "test001" to avoid global naming convention on resources)
           - enter Github parameters
