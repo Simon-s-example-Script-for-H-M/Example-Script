@@ -11,15 +11,14 @@ Github repo with code: https://github.com/Simon-s-example-Script-for-H-M/Example
 ### Motivation: 
 In this script, I want to show an Infrastructure as Code example which I have written. It is a subset from our AFRYX-Data-Analytics-Platform (AXD) infrastructure, but modified to make work independently. 
 
-![text](https://github.com/Simon-s-example-Script-for-H-M/Example-Script/blob/main/datafactory_illustration.png)
-
 I choose this code as a demonstration of way of thinking behind infrastructure as code, which involves both terraform and python.
 
 ### Background and Problem description:
 In AXD, we want to provide data ingestion functionality using data factory, which performs ETL activities between blob storage (raw data storage) and data lake (processed data storage). 
 
-Azure Data factory pipelines consist of link services (authorization to storage accounts), datasets (targeting a specific file format and file path inside a storage account), triggers (time or event based triggers) and activities (ETL activities). These above mentioned building blocks are all stored as JSON files inside data factory studio, and data factory pipelines are high level JSON file that calls on these building blocks. A data factory pipeline thereby performs a series of ETL activities that connects a source and a sink dataset inside 2 storage account (authorized by link services), and runs based on a defined trigger.    
+Azure Data factory pipelines consist of link services (authorization to storage accounts), datasets (targeting a specific file format and file path inside a storage account), triggers (time or event based triggers) and activities (ETL activities). These above mentioned building blocks are all stored as JSON files inside data factory studio, and data factory pipelines are high level JSON file that calls on these building blocks. A data factory pipeline thereby performs a series of ETL activities that connects a source and a sink dataset inside 2 storage account (authorized by link services), and runs based on a defined trigger.  
 
+![text](https://github.com/Simon-s-example-Script-for-H-M/Example-Script/blob/main/datafactory_illustration.png)
 
 When setting up a data factory environment, a common solution is to connect data factory to an external git repo, which contains the essential JSON scripts for the pipelines of interest. Data factory will then be able to construct these pipelines based on the provided JSON scripts. 
 
