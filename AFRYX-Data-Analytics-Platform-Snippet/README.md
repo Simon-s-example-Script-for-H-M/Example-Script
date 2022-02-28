@@ -18,13 +18,13 @@
 
 |__ terraform project
     |__ Simons_example_infra
-    |        |__main.tf
-    |            |__ imports module_data_ingestion
-    |            |__ imports module_github
-    |        |__terraform.tfvars
-    |            |__ environment tag parameter        (used as suffix for created resources to avoid naming convention)
-    |            |__ github_repo parameters           (enter parameters for github account)
-    |            |__ pipeline_configuration           (enter parameters for adf-pipeline configuration)
+            |__main.tf
+                |__ imports module_data_ingestion
+                |__ imports module_github
+            |__terraform.tfvars
+                |__ environment tag parameter        (used as suffix for created resources to avoid naming convention)
+                |__ github_repo parameters           (enter parameters for github account)
+                |__ pipeline_configuration           (enter parameters for adf-pipeline configuration)
 
 |___ environment.yaml                                 (environmnet pakcages for the python scripts run by terraform)   
 
