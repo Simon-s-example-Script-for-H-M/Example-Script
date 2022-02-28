@@ -1,0 +1,75 @@
+{
+    "source":{
+        "src_blob_csv":{
+            "type": "DelimitedTextSource",
+            "storeSettings": {
+                "type": "AzureBlobStorageReadSettings",
+                "recursive": true,
+                "enablePartitionDiscovery": false
+            },
+            "formatSettings": {
+                "type": "DelimitedTextReadSettings"
+            }
+        },
+        "src_blob_excel":{
+            "type": "ExcelSource",
+            "storeSettings": {
+                "type": "AzureBlobStorageReadSettings",
+                "recursive": true,
+                "enablePartitionDiscovery": false
+            }
+        },
+        "src_blob_json":{
+            "type": "JsonSource",
+            "storeSettings": {
+                "type": "AzureBlobStorageReadSettings",
+                "recursive": true,
+                "enablePartitionDiscovery": false
+            },
+            "formatSettings": {
+                "type": "JsonReadSettings"
+            }
+        }
+    },
+    "sink":{
+        "dst_datalake_csv":{
+            "type": "DelimitedTextSink",
+            "storeSettings": {
+                "type": "AzureBlobStorageWriteSettings"
+            },
+            "formatSettings": {
+                "type": "DelimitedTextWriteSettings",
+                "quoteAllText": true,
+                "fileExtension": ".txt"
+            }
+        },
+        "dst_datalake_json":{
+            "type": "JsonSink",
+            "storeSettings": {
+                "type": "AzureBlobFSWriteSettings"
+            },
+            "formatSettings": {
+                "type": "JsonWriteSettings"
+            }
+        },
+        "dst_datalake_parquet":{
+            "type": "ParquetSink",
+            "storeSettings": {
+                "type": "AzureBlobFSWriteSettings"
+            },
+            "formatSettings": {
+                "type": "ParquetWriteSettings"
+            }
+        }
+    },
+    "translator": {
+        "dst_datalake_parquet":{
+            "type": "TabularTranslator",
+            "typeConversion": true,
+            "typeConversionSettings": {
+                "allowDataTruncation": true,
+                "treatBooleanAsNumber": false
+            }
+        }
+    }
+}

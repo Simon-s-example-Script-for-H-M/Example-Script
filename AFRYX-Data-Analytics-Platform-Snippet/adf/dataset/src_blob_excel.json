@@ -1,0 +1,32 @@
+{
+	"name": "src_blob_excel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"fileName": "@dataset().sourceFileName"
+			}
+		},
+		"parameters": {
+			"sourceFileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetIndex": "0",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().sourceFileName",
+					"type": "Expression"
+				},
+				"container": "rawdata"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}

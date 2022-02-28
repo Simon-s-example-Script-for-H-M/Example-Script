@@ -1,0 +1,11 @@
+{
+    "source_path": "",
+    "source_data_format": "",
+    "source_file_name": "",
+
+    "sink_format": "",
+    "sink_path":"",
+
+    "transform_module":"",
+    "resource_group_name":"rg-simons-infra"
+}

@@ -1,0 +1,1 @@
+{"name": "AzureBlobStorage", "properties": {"description": "AXD Azure LInked Service", "parameters": {"fileName": {"type": "string"}}, "annotations": [], "type": "AzureBlobStorage", "typeProperties": {"serviceEndpoint": "https://stsimonsinfra002.blob.core.windows.net/", "accountKind": "BlobStorage"}}}

@@ -1,0 +1,1 @@
+{"name": "AzureDataLakeStorage", "properties": {"typeProperties": {"url": "https://dlsimonsinfra002.dfs.core.windows.net/"}, "type": "AzureBlobFS", "description": "Azure DL Storage", "annotations": []}}
