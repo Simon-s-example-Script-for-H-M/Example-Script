@@ -33,9 +33,9 @@ This script is an infrastructure as code script based on terraform and python. I
 
 What happens in the background when the script is being executed can be summarized as:
 
-•	*The instructions for how to run the code can be found in the README.md inside the folder*
+•	(**The instructions for how to run the code can be found in the README.md inside the folder**)
 
-•	*Due to lack of time, some dependencies between resources are not properly established, but this can be solved by running “terraform apply” several times when encountering errors.*
+•	(**Due to lack of time, some dependencies between resources are not properly established, but this can be solved by running “terraform apply” several times when encountering errors.**)
 
 •	Terraform deploys a blob storage & container, a datalake & datalake-file-system, a data factory resource and a github repo.
 
