@@ -33,9 +33,9 @@ This script is an infrastructure as code script based on terraform and python. I
 
 What happens in the background when the script is being executed can be summarized as:
 
-•	(**The instructions for how to run the code can be found in the README.md inside the folder**)
+•	(**The instructions for how to run the code can be found in the README.md inside the folder)
 
-•	(**Due to lack of time, some dependencies between resources are not properly established, but this can be solved by running “terraform apply” several times when encountering errors.**)
+•	(**Due to lack of time, some dependencies between resources are not properly established, but this can be solved by running “terraform apply” several times when encountering errors.)
 
 •	Terraform deploys a blob storage & container, a datalake & datalake-file-system, a data factory resource and a github repo.
 
@@ -66,7 +66,7 @@ To reconstruct a navigation platform similar to google street view, the street v
 We used OpenGL for image stitching and Pygame for the platfrom
 
 ### Script description:
-•	The instructions for how to run the code can be found in the README.md inside the folder
+•	(**The instructions for how to run the code can be found in the README.md inside the folder)
 
 •	OpenGL will create a 3D model (3D cubic space) based on 6 image tiles with different heading angles per time, and load it inside a Pygame screen.
 
